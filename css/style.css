@@ -1,0 +1,210 @@
+:root {
+	--primary-clr: #fff;
+	--secondary-clr: #029e9d;
+	--tertiary-clr: #fdc703;
+	--accent-clr: #777777;
+}
+
+/* GENERAL ADJUSTMENT */
+* {
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: "poppins-regular";
+}
+
+@font-face {
+	font-family: "poppins-regular";
+	src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+	font-family: play-fair-display;
+	src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+html {
+	color-scheme: light dark;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+	font: inherit;
+}
+a {
+	text-decoration: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "play-fair-diplay";
+}
+
+/* ... */
+
+/* MODIFIED EXISTING CLASS */
+
+/* DROPDOWN TOGGLE RESTYLING */
+.dropdown-toggle {
+	display: flex !important;
+	align-items: center;
+}
+.dropdown-toggle::after {
+	font-family: "FontAwesome" !important;
+	content: "\f107" !important;
+	border-width: 0 !important;
+}
+.dropdown-item.dropdown-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.dropdown-item.dropdown-toggle::after {
+	font-family: "FontAwesome" !important;
+	content: "\f105" !important;
+	border-width: 0;
+}
+
+/* SLICK RESTYLING */
+.slick-slide.slide_mod {
+	margin-inline: 1rem;
+}
+.partner-slick .slick-list,
+.autoplay .slick-list {
+	margin-inline: -1rem;
+}
+.slick-next {
+	right: 1rem;
+}
+.slick-prev {
+	left: 1rem;
+}
+.slick-prev::before {
+	font-family: "FontAwesome";
+	content: "\f104";
+}
+.slick-next::before {
+	font-family: "FontAwesome";
+	content: "\f105";
+}
+.slick-prev::before,
+.slick-next::before {
+	opacity: 1;
+	border-radius: 40px;
+	padding: 0.5rem 1rem;
+	background-color: var(--secondary-clr);
+	color: var(--primary-clr);
+	font-size: 2rem;
+	transition: 300ms ease-in-out;
+}
+.slick-arrow:hover.slick-prev::before,
+.slick-arrow:hover.slick-next::before {
+	background-color: var(--tertiary-clr);
+}
+
+/* ... */
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 992px) {
+	.nav-item.dropdown:hover .dropdown-mainmenu {
+		display: block;
+		margin-block: 0.125rem;
+	}
+	.dropdown-menu li {
+		position: relative;
+	}
+	.dropdown-menu .dropdown__submenu {
+		display: none;
+		position: absolute;
+		left: 100%;
+		top: 0;
+		z-index: 10;
+	}
+
+	.dropdown-menu > li:hover > .dropdown__submenu {
+		display: block;
+	}
+	.dropdown-menu .dropdown__submenu.show {
+		display: block;
+	}
+
+	/*   Dicka   */
+	.paket-tur-judul {
+		text-align: center;
+	}
+
+	.karoselarrow {
+		display: none;
+	}
+
+	.judulkategori h3 {
+		padding-block: 2rem !important;
+	}
+}
+
+/* COMPOSITION */
+
+/* UTILITY */
+.flow > * {
+	display: inline-block;
+	margin-inline: 0.2rem;
+	margin-bottom: 0;
+}
+
+.btn {
+	border: transparent !important;
+	overflow: hidden !important;
+}
+.btn.translate-effect {
+	z-index: 1;
+	position: relative;
+	box-shadow: 0 0 1px 4px hsla(0, 0%, 100%, 0.155);
+}
+.btn.translate-effect::before {
+	content: "";
+	position: absolute;
+	background-color: var(--tertiary-clr);
+	z-index: -1;
+	display: block;
+	transition: all 500ms ease-in-out;
+}
+.btn.translate-effect:hover::before {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 500ms ease-in-out;
+}
+.btn.left-translate::before {
+	top: 0;
+	bottom: 0;
+	left: -100%;
+	right: 100%;
+}
+
+/* BLOCK */
+.fuck__item > *:nth-last-child(n + 2) {
+	border-right: 1px solid #ffffff94;
+}
+.fuck__item > * {
+	font-size: 0.9rem;
+	padding-inline: 1rem;
+}
