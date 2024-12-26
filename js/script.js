@@ -1,92 +1,22 @@
+// NAVBAR
 document.addEventListener("DOMContentLoaded", () => {
-	const dropdowns = document.querySelectorAll(".dropdown-menu > li");
+	let lastScrollTop = 0;
+	const navbar = document.getElementById("navbar");
 
-	dropdowns.forEach((dropdown) => {
-		const submenu = dropdown.querySelector(".dropdown__submenu");
-		// Handle hover for showing submenus
-		dropdown.addEventListener("mouseenter", () => {
-			if (submenu) {
-				submenu.classList.add("show");
-			}
-		});
+	window.addEventListener("scroll", () => {
+		const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-		// Handle hover out for hiding submenus
-		dropdown.addEventListener("mouseleave", () => {
-			if (submenu) {
-				submenu.classList.remove("show");
-			}
-		});
+		if (scrollTop > lastScrollTop) {
+			navbar.style.top = "-100px";
+		} else {
+			navbar.style.top = "0";
+		}
 
-		// Toggle submenu visibility on click
-		dropdown.addEventListener("click", (event) => {
-			event.stopPropagation();
-			if (submenu) {
-				submenu.classList.toggle("show");
-			}
-		});
-	});
-
-	// Close all dropdowns when clicking outside
-	document.addEventListener("click", () => {
-		document.querySelectorAll(".dropdown__submenu.show").forEach((submenu) => {
-			submenu.classList.remove("show");
-		});
+		lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 	});
 });
 
-// var prevScrollpos = window.scrollY;
-// var navbar = document.getElementById("navbar");
-// var upperContent = document.getElementById("info");
-// var spacer = document.createElement("div");
-// var isFirstScroll = true; // Flag for first scroll behavior
-
-// // Set up the spacer to prevent layout shifting
-// spacer.style.height = `${navbar.offsetHeight}px`;
-// spacer.style.display = "none"; // Initially hidden
-// navbar.parentNode.insertBefore(spacer, navbar); // Insert spacer before navbar
-
-// window.onscroll = function () {
-// 	var currentScrollPos = window.scrollY;
-// 	var upperContentHeight = upperContent.offsetHeight; // Height of the upper content section
-
-// 	if (currentScrollPos <= upperContentHeight) {
-// 		// If scrolled back to or above the upper content height
-// 		navbar.style.position = "relative";
-// 		navbar.style.top = "0";
-// 		spacer.style.display = "none"; // Hide spacer
-// 		isFirstScroll = true; // Reset first scroll flag
-// 	} else {
-// 		// If scrolled past the upper content height
-// 		if (isFirstScroll) {
-// 			// First scroll behavior: show navbar when leaving the top
-// 			navbar.style.position = "fixed";
-// 			navbar.style.top = "0";
-// 			spacer.style.display = "hide"; // Show spacer
-
-// 			// Delay hiding the navbar
-// 			setTimeout(() => {
-// 				if (currentScrollPos > prevScrollpos) {
-// 					navbar.style.top = "-80px"; // Hide navbar
-// 				}
-// 				isFirstScroll = false; // Disable first-scroll logic
-// 			}, 150); // Delay in ms
-// 		} else if (prevScrollpos > currentScrollPos) {
-// 			// Scrolling up
-// 			navbar.style.position = "fixed";
-// 			navbar.style.top = "0";
-// 			spacer.style.display = "block";
-// 		} else {
-// 			// Scrolling down
-// 			navbar.style.position = "fixed";
-// 			navbar.style.top = "-80px";
-// 			spacer.style.display = "hide";
-// 		}
-// 	}
-
-// 	// Update previous scroll position
-// 	prevScrollpos = currentScrollPos;
-// };
-
+// HERO SLICK
 $(".hero__slick").slick({
 	autoplay: true,
 	autoplaySpeed: 3000,
@@ -105,6 +35,7 @@ $(".hero__slick").slick({
 	],
 });
 
+// PAKET TUR SLICK
 $(".karoselgambar-paket").slick({
 	slidesToShow: 3,
 	slidesToScroll: 1,
@@ -130,6 +61,7 @@ $(".karoselgambar-paket").slick({
 	],
 });
 
+// PAKET TUR ARROW
 $(".karoselarrow").slick({
 	speed: 1500,
 	arrows: true,
@@ -137,6 +69,7 @@ $(".karoselarrow").slick({
 	asNavFor: ".karoselgambar-paket",
 });
 
+// PAKET TUR ICON
 $(".karoselgambar-icon").slick({
 	arrows: false,
 	slidesToShow: 6,
@@ -167,6 +100,7 @@ $(".karoselgambar-icon").slick({
 	],
 });
 
+// REVIEW SLICK
 $(".review__carousel").slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -177,6 +111,7 @@ $(".review__carousel").slick({
 	infinite: true,
 });
 
+// TREND SLICK
 $(".trend__carousel").slick({
 	slidesToShow: 2,
 	slidesToScroll: 1,
@@ -188,7 +123,7 @@ $(".trend__carousel").slick({
 	infinite: true,
 	responsive: [
 		{
-			breakpoint: 991,
+			breakpoint: 1025,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -197,6 +132,7 @@ $(".trend__carousel").slick({
 	],
 });
 
+// GUIDES SLICK
 $(".autoplay").slick({
 	slidesToShow: 4,
 	slidesToScroll: 1,
@@ -214,6 +150,7 @@ $(".autoplay").slick({
 		{
 			breakpoint: 811,
 			settings: {
+				slidesToScroll: 1,
 				slidesToShow: 2,
 			},
 		},
@@ -221,11 +158,13 @@ $(".autoplay").slick({
 			breakpoint: 501,
 			settings: {
 				slidesToShow: 1,
+				slidesToScroll: 1,
 			},
 		},
 	],
 });
 
+// PARTNER SLICK
 $(".partner__slick").slick({
 	infinite: true,
 	slidesToShow: 5,
@@ -256,6 +195,7 @@ $(".partner__slick").slick({
 	],
 });
 
+// FOOTER SLIC
 $(".footer__slick").slick({
 	infinite: true,
 	slidesToShow: 8,
@@ -267,21 +207,85 @@ $(".footer__slick").slick({
 		{
 			breakpoint: 1000,
 			settings: {
-				slidesToShow: 3,
+				slidesToShow: 4,
 				slidesToScroll: 1,
 			},
 		},
 		{
-			breakpoint: 811,
+			breakpoint: 597,
+			settings: {
+				slidesToShow: 3,
+			},
+		},
+		{
+			breakpoint: 497,
 			settings: {
 				slidesToShow: 2,
 			},
 		},
-		{
-			breakpoint: 501,
-			settings: {
-				slidesToShow: 1,
-			},
-		},
 	],
+});
+
+// CUSTOM SELECT INPUT
+function initializeCustomDropdowns() {
+	document.querySelectorAll(".custom_dropdown").forEach((dropdown) => {
+		const dropdownButton = dropdown.querySelector(".form-control");
+		const dropdownMenu = dropdown.querySelector(".dropdown_menu");
+		const hiddenSelectId = dropdown.getAttribute("data-select-id");
+		const hiddenSelect = document.getElementById(hiddenSelectId);
+
+		// Toggle the dropdown menu
+		dropdownButton.addEventListener("click", function () {
+			dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+		});
+
+		// Handle option selection
+		dropdownMenu.addEventListener("click", function (e) {
+			if (e.target.tagName === "LI") {
+				const selectedValue = e.target.getAttribute("data-value");
+				dropdownButton.textContent = e.target.textContent;
+				hiddenSelect.value = selectedValue;
+				dropdownMenu.style.display = "none";
+			}
+		});
+
+		// Close the dropdown when clicking outside
+		document.addEventListener("click", function (e) {
+			if (!e.target.closest(".custom_dropdown")) {
+				dropdownMenu.style.display = "none";
+			}
+		});
+	});
+}
+// Initialize the dropdowns when the page loads
+document.addEventListener("DOMContentLoaded", initializeCustomDropdowns);
+
+// DROPDOWN TRANSITION
+$(document).ready(function () {
+	function toggleOnMobile(breakpoint = 1024) {
+		$("[data-select-id]").each(function () {
+			const toggleButton = $(this); // The button
+			const panelId = toggleButton.data("select-id"); // Get the target panel ID
+			const panel = $(`#${panelId}`); // The panel
+
+			function handleToggle() {
+				if (window.innerWidth <= breakpoint) {
+					toggleButton.off("click").on("click", function () {
+						panel.slideToggle(600);
+					});
+				} else {
+					toggleButton.off("click"); // Remove the event handler on larger screens
+				}
+			}
+
+			// Run on page load
+			handleToggle();
+
+			// Run on window resize
+			$(window).resize(handleToggle);
+		});
+	}
+
+	// Call the function to enable the toggle behavior
+	toggleOnMobile();
 });

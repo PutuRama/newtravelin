@@ -9,7 +9,8 @@
 		<link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="scss/custom.css" />
-		<title>Travelinn</title>
+		<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+		<title>Travelin - Travel Tour Booking HTML Templates</title>
 	</head>
 	<body>
 		<!-- 
@@ -28,36 +29,58 @@
 		-->
 
 		<!-- HEADER -->
-		<header>
-			<!-- SEARCH -->
-			<div class="info [ bg-info ] [ position-relative ]" id="info">
-				<!-- WRAPPER -->
-				<div
-					class="[ text-white ] [ container d-flex justify-content-between align-items-center ]">
-					<!-- INFO ICON1 -->
-					<div class="info__item [ flow ]">
-						<p><i class="fa-solid fa-calendar"></i> Thursday, Mar 26, 2021</p>
-						<p><i class="fa-solid fa-location-dot"></i> Hollywood, America</p>
-						<p><i class="fa-solid fa-clock"></i> Mon-Fri: 10 AM - 5 PM</p>
-					</div>
+		<div class="info [ bg-info ] [ position-relative py-2 ]" id="info">
+			<!-- WRAPPER -->
+			<div
+				class="[ text_white ] [ container-lg d-flex justify-content-between align-items-center ]">
+				<!-- INFO ITEMS1 -->
+				<div class="info__item [ flow text-white ]">
+					<!-- ICONS1 -->
+					<p class="[ ps-0 ]"><i class="fa-solid fa-calendar"></i> Thursday, Mar 26, 2021</p>
 
-					<!-- INFO ICON2 -->
-					<div class="info__item [ py-2 ]">
-						<i class="fa-brands fa-facebook"></i>
-						<i class="fa-brands fa-twitter"></i>
-						<i class="fa-brands fa-instagram"></i>
-						<i class="fa-brands fa-linkedin"></i>
-					</div>
+					<!-- ICONS2 -->
+					<p><i class="fa-solid fa-location-dot"></i> Hollywood, America</p>
+
+					<!-- ICONS3 -->
+					<p><i class="fa-solid fa-clock"></i> Mon-Fri: 10 AM - 5 PM</p>
 				</div>
-			</div>
 
-			<!-- NAVBAR -->
-			<!-- !!!BELUM RAPI -->
-			<nav
-				class="navbar [ bg-body-tertiary navbar-expand-lg z-3 py-3 ] [ w-100 bg-white ]"
-				id="navbar">
-				<div class="container">
+				<!-- INFO ITEMS2 -->
+				<ul class="info__item [ flow m-0 fs-6 ]">
+					<!-- ICONS1 -->
+					<li>
+						<a class="[ text-white ]" href="#"> <i class="fa-brands fa-facebook"></i></a>
+					</li>
+
+					<!-- ICONS2 -->
+					<li>
+						<a class="[ text-white ]" href="#"> <i class="fa-brands fa-twitter"></i></a>
+					</li>
+
+					<!-- ICONS3 -->
+					<li>
+						<a class="[ text-white ]" href="#"> <i class="fa-brands fa-instagram"></i></a>
+					</li>
+
+					<!-- ICONS4 -->
+					<li class="pe-0">
+						<a class="[ text-white ]" href="#"> <i class="fa-brands fa-linkedin"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- NAVBAR -->
+		<!-- !!!BELUM RAPI -->
+		<nav
+			class="navbar [ bg-white shadow-sm ] [ position-sticky navbar-expand-lg z-3 ]"
+			id="navbar">
+			<div class="wrapper_nav [ container-lg ]">
+				<!-- LOGO -->
+				<div class="wrapper_mobile [ d-flex align-items-center justify-content-between ]">
 					<a class="navbar-brand" href="#"><img src="assets/img/logo (1).png" alt="" /></a>
+
+					<!-- BURGER ICON -->
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -68,349 +91,509 @@
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav [ mx-auto mb-2 mb-lg-0 ]">
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									aria-expanded="false">
-									HOME
-								</a>
-								<ul class="dropdown-menu dropdown-mainmenu">
-									<li><a class="dropdown-item" href="#">Homepage Default</a></li>
-									<li><a class="dropdown-item" href="#">Homepage 1</a></li>
-									<li><a class="dropdown-item" href="#">Homepage 2</a></li>
-									<li><a class="dropdown-item" href="#">Homepage 3</a></li>
-									<li><a class="dropdown-item" href="#">Homepage 4</a></li>
-									<li><a class="dropdown-item" href="#">Homepage 5</a></li>
-									<li class="dropend">
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Flag</a
-										>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Flag Homepage</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Flag Grid</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Flag List</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Flag Detail</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
-											>Cars</a
-										>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Car Homepage</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Car Grid</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Car List</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Car Detail</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Cruise
-										</a>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Cruise Homepage</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Cruise Grid</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Cruise List</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Cruise Detail</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">ABOUT US</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									aria-expanded="false">
-									DESTINATION
-								</a>
-								<ul class="dropdown-menu dropdown-mainmenu">
-									<li><a class="dropdown-item" href="#">Destination List</a></li>
-									<li><a class="dropdown-item" href="#">Destination Detail</a></li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									aria-expanded="false">
-									TOURS
-								</a>
-								<ul class="dropdown-menu dropdown-mainmenu">
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Tour List
-										</a>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Tour List Left Sidebar</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Tour List Right Sidebar</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Tour List Full Width</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Tour Grid
-										</a>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Tour List Left Sidebar</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Tour List Right Sidebar</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Tour List Full Width</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Tour Single
-										</a>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Tour List Left Sidebar</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Tour List Right Sidebar</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Tour List Full Width</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									aria-expanded="false">
-									PAGES
-								</a>
-								<ul class="dropdown-menu dropdown-mainmenu">
-									<li><a class="dropdown-item" href="#">Our Guide</a></li>
-									<li><a class="dropdown-item" href="#">Booking</a></li>
-									<li><a class="dropdown-item" href="#">Confirmation</a></li>
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Services
-										</a>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Service List</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Service Detail</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Gallery
-										</a>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Gallery</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Gallery Masonry</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Error
-										</a>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Erorr Page 1</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Erorr Page 2</a>
-											</li>
-										</ul>
-									</li>
-									<li><a class="dropdown-item" href="#">Login|Registern</a></li>
-									<li><a class="dropdown-item" href="#">Testimonials</a></li>
-									<li><a class="dropdown-item" href="#">FAQ</a></li>
-									<li><a class="dropdown-item" href="#">Contact Us</a></li>
-									<li><a class="dropdown-item" href="#">Dashboard</a></li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									aria-expanded="false">
-									BLOG
-								</a>
-								<ul class="dropdown-menu dropdown-mainmenu">
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Blog Grid
-										</a>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Blog Grid 1</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Blog Grid 2</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Blog Grid 3</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Blog List
-										</a>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Blog List 1</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Blog List 2</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Blog List 3</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a
-											class="dropdown-item dropdown-toggle"
-											role="button"
-											href="#"
-											data-bs-toggle="dropdown"
-											aria-expanded="false">
-											Blog Single
-										</a>
-										<ul class="dropdown-menu dropdown__submenu">
-											<li>
-												<a class="dropdown-item" href="#">Blog Single 1</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Blog Single 2</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Blog Single 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<form class="[ d-flex align-items-center gap-3 ]" role="search">
-							<a href="#" class="nav__btn_login [ mb-0 ] [ link-dark text-decoration-none ]">
-								<i class="fa-regular fa-user [ me-1 ]"></i> LOGIN/REGISTER</a
-							>
-							<button
-								class="[ btn btn-info translate-effect left-translate text-white ]"
-								type="submit">
-								BOOK NOW
-							</button>
-						</form>
-					</div>
 				</div>
-			</nav>
-		</header>
+
+				<!-- COLLAPSE WRAP -->
+				<div class="[ collapse navbar-collapse ]" id="navbarSupportedContent">
+					<!-- NAV LINK -->
+					<ul class="navbar-nav [ mx-auto mb-lg-0 ]">
+						<!-- LINK1 -->
+						<li class="nav-item [ dropdown fade_trigger ]">
+							<a
+								class="nav-link [ awesome toggle_change text_hover ]"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								data-bs-auto-close="outside"
+								aria-expanded="false"
+								data-select-id="panel">
+								HOME
+							</a>
+
+							<!-- SUB DROPDOWN -->
+							<ul
+								class="dropdown-menu [ dropdown_mainmenu fade_transition shadow ] panel"
+								id="panel">
+								<!-- ORDINARY LINK -->
+								<li>
+									<a class="dropdown-item [ dropdown_mod ]" href="#">Homepage Default</a>
+								</li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Homepage 1</a></li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Homepage 2</a></li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Homepage 3</a></li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Homepage 4</a></li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Homepage 5</a></li>
+
+								<!-- WITH DROPDOWN -->
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ awesome dropdown_mod ] toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel1">
+										Flag</a
+									>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel1">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Flag Homepage</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Flag Grid</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Flag List</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Flag Detail</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel2"
+										>Cars</a
+									>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel2">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Car Homepage</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Car Grid</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Car List</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Car Detail</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel3">
+										Cruise
+									</a>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel3">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Cruise Homepage</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Cruise Grid</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Cruise List</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Cruise Detail</a
+											>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<!-- LINK2 -->
+						<li class="nav-item">
+							<a class="nav-link text_hover" href="#">ABOUT US</a>
+						</li>
+
+						<!-- LINK3 -->
+						<li class="nav-item [ dropdown fade_trigger ]">
+							<a
+								class="nav-link [ awesome toggle_change text_hover ]"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								data-bs-auto-close="outside"
+								aria-expanded="false"
+								data-select-id="panel4">
+								DESTINATION
+							</a>
+							<!-- DROPDOWN -->
+							<ul
+								class="dropdown-menu [ dropdown_mainmenu fade_transition shadow ] panel"
+								id="panel4">
+								<li>
+									<a class="dropdown-item [ dropdown_mod ]" href="#">Destination List</a>
+								</li>
+								<li>
+									<a class="dropdown-item [ dropdown_mod ]" href="#">Destination Detail</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- LINK4 -->
+						<li class="nav-item [ dropdown fade_trigger ]">
+							<a
+								class="nav-link [ awesome toggle_change text_hover ]"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								data-bs-auto-close="outside"
+								aria-expanded="false"
+								data-select-id="panel5">
+								TOURS
+							</a>
+							<!-- WITH DROPDOWN -->
+							<ul
+								class="dropdown-menu [ dropdown_mainmenu fade_transition shadow ] panel"
+								id="panel5">
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel6">
+										Tour List
+									</a>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel6">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Tour List Left Sidebar</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Tour List Right Sidebar</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Tour List Full Width</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel7">
+										Tour Grid
+									</a>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel7">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Tour List Left Sidebar</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Tour List Right Sidebar</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Tour List Full Width</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel8">
+										Tour Single
+									</a>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel8">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Tour List Left Sidebar</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Tour List Right Sidebar</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Tour List Full Width</a
+											>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<!-- LINK5 -->
+						<li class="nav-item [ dropdown fade_trigger ]">
+							<a
+								class="nav-link [ awesome toggle_change text_hover ]"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								data-bs-auto-close="outside"
+								aria-expanded="false"
+								data-select-id="panel9">
+								PAGES
+							</a>
+							<ul
+								class="dropdown-menu [ dropdown_mainmenu fade_transition shadow ] panel"
+								id="panel9">
+								<!-- ORDINARY LINK -->
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Our Guide</a></li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Booking</a></li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Confirmation</a></li>
+
+								<!-- WITH DROPDOWN -->
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel10">
+										Services
+									</a>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel10">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Service List</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Service Detail</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel11">
+										Gallery
+									</a>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel11">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Gallery</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Gallery Masonry</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel12">
+										Error
+									</a>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel12">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Erorr Page 1</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Erorr Page 2</a>
+										</li>
+									</ul>
+								</li>
+
+								<!-- ORDINARY LINK -->
+								<li>
+									<a class="dropdown-item [ dropdown_mod ]" href="#">Login|Registern</a>
+								</li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Testimonials</a></li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">FAQ</a></li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Contact Us</a></li>
+								<li><a class="dropdown-item [ dropdown_mod ]" href="#">Dashboard</a></li>
+							</ul>
+						</li>
+
+						<!-- LINK6 -->
+						<li class="nav-item [ dropdown fade_trigger ]">
+							<a
+								class="nav-link [ dropdown_mod awesome toggle_change text_hover ]"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								data-bs-auto-close="outside"
+								aria-expanded="false"
+								data-select-id="panel13">
+								BLOG
+							</a>
+
+							<!-- WITH DROPDOWN -->
+							<ul
+								class="dropdown-menu [ dropdown_mainmenu fade_transition shadow ] panel"
+								id="panel13">
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel14">
+										Blog Grid
+									</a>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel14">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Blog Grid 1</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Blog Grid 2</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Blog Grid 3</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel15">
+										Blog List
+									</a>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel15">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Blog List 1</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Blog List 2</a>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#">Blog List 3</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropend [ fade_trigger ]">
+									<a
+										class="dropdown-item [ dropdown_mod awesome toggle_change ]"
+										role="button"
+										href="#"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-select-id="panel16">
+										Blog Single
+									</a>
+
+									<!-- MORE DROPDOWN -->
+									<ul
+										class="dropdown-menu [ dropdown__submenu fade_transition shadow ] panel"
+										id="panel16">
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Blog Single 1</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Blog Single 2</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item [ dropdown_mod ]" href="#"
+												>Blog Single 3</a
+											>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<!-- BTN WRAP -->
+					<form class="form__nav [ d-flex align-items-center gap-3 ]" role="search">
+						<!-- BTN1 -->
+						<a href="#" class="nav__btn_login [ mb-0 ] [ link-dark text-decoration-none ]">
+							<i class="fa-regular fa-user [ me-1 ]"></i> LOGIN/REGISTER</a
+						>
+
+						<!-- BTN2 -->
+						<button
+							class="[ btn btn-info translate-effect left-translate text-white ]"
+							type="submit">
+							BOOK NOW
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
 		<!-- ... -->
 
 		<!-- HOME/HERO -->
@@ -427,7 +610,7 @@
 					<div class="hero__content [ position-absolute text-center z-1 ]">
 						<h6 class="[ fs-5 fw-bold ]">Amazing Places</h6>
 						<h1 class="[ display-3 fw-bold ]">Make Your Trip Fun & Noted</h1>
-						<p>
+						<p class="text-light">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua
 						</p>
@@ -447,7 +630,7 @@
 					<div class="hero__content [ position-absolute text-center z-1 ]">
 						<h6 class="[ fs-5 fw-bold ]">Explore Travel</h6>
 						<h1 class="[ display-3 fw-bold ]">Start Planning Your Dream Trip</h1>
-						<p>
+						<p class="text-light">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua
 						</p>
@@ -470,7 +653,7 @@
 					<div class="hero__content [ position-absolute text-center z-1 ]">
 						<h6 class="[ fs-5 fw-bold ]">Road to Travel</h6>
 						<h1 class="[ display-3 fw-bold ]">Begin Your Adventure With Us</h1>
-						<p>
+						<p class="text-light">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua
 						</p>
@@ -489,11 +672,11 @@
 			<div class="search__bg [ w-100 ]"></div>
 
 			<!-- CONTENT -->
-			<div class="search__content [ container position-relative z-1 ]">
+			<div class="search__content [ container-md position-relative z-1 ]">
 				<!-- WRAPPER -->
-				<div class="[ row mx-4 ]">
+				<div class="wrapper__form [ row ]">
 					<!-- ROW ITEM1 -->
-					<div class="search__content_left [ bg-info ] [ col-lg-2 px-4 ]">
+					<div class="search__content_left [ bg-info ] [ col-xl-2 px-4 ]">
 						<!-- TITLE -->
 						<div
 							class="[ text-light ] [ d-flex align-items-center justify-content-center gap-3 text-center py-5 ]">
@@ -503,40 +686,75 @@
 					</div>
 
 					<!-- ROW ITEM2 -->
-					<div class="search__content_form [ col-lg-10 ] [ bg-light ]">
+					<div class="search__content_form [ col-xl-10 ] [ bg-light ]">
 						<!-- CONTENT -->
-						<div class="[ d-lg-flex align-items-center gap-3 py-5 px-3 ]">
+						<form class="search__form [ d-xl-flex align-items-center gap-3 py-5 px-3 ]">
 							<!-- INPUT1 -->
-							<div class="form__item [ input-group ]">
-								<select class="form-select" name="country" id="country">
-									<option value="" disabled selected hidden>Destination</option>
-									<option value="1">Argentina</option>
-									<option value="2">Belgium</option>
-									<option value="3">Canada</option>
-									<option value="4">Denmark</option>
+							<div class="custom_select w-100">
+								<div class="custom_dropdown w-100" data-select-id="select1">
+									<button
+										type="button"
+										class="form-control [ awesome toggle_change dropdown_button bg-light ]">
+										Destination
+									</button>
+									<ul class="dropdown_menu z-2">
+										<li data-value="option1">Argentina</li>
+										<li data-value="option2">Belgium</li>
+										<li data-value="option3">Canada</li>
+										<li data-value="option4">Denmark</li>
+									</ul>
+								</div>
+
+								<select name="country" id="select1" style="display: none">
+									<option value="option1">Argentina</option>
+									<option value="option2">Belgium</option>
+									<option value="option3">Canada</option>
+									<option value="option4">Denmark</option>
 								</select>
 							</div>
 
 							<!-- INPUT2 -->
 							<div class="form__item [ input-group ]">
-								<input class="" type="date" />
+								<input class="bg-light" type="date" />
 							</div>
 
 							<!-- INPUT3 -->
-							<div class="form__item [ input-group ]">
-								<select class="form-select" name="country" id="country">
-									<option value="" disabled selected hidden>Travel Type</option>
-									<option value="1">City Tour</option>
-									<option value="2">Family Tour</option>
+							<div class="custom_select w-100">
+								<div class="custom_dropdown w-100" data-select-id="select1">
+									<button
+										type="button"
+										class="form-control [ awesome toggle_change dropdown_button bg-light ]">
+										Travel Type
+									</button>
+									<ul class="dropdown_menu z-2">
+										<li data-value="option1">City Tour</li>
+										<li data-value="option2">Family Tour</li>
+									</ul>
+								</div>
+
+								<select name="country" id="select1" style="display: none">
+									<option value="option1">City Tour</option>
+									<option value="option2">Family Tour</option>
 								</select>
 							</div>
 
 							<!-- INPUT4 -->
-							<div class="form__item [ input-group ]">
-								<select class="form-select" name="country" id="country">
-									<option value="" disabled selected hidden>Tour Duration</option>
-									<option value="1">5 Days</option>
-									<option value="2">7 Days</option>
+							<div class="custom_select w-100">
+								<div class="custom_dropdown w-100" data-select-id="select1">
+									<button
+										type="button"
+										class="form-control [ awesome toggle_change dropdown_button bg-light ]">
+										Tour Duration
+									</button>
+									<ul class="dropdown_menu z-2">
+										<li data-value="option1">5 Days</li>
+										<li data-value="option2">7 Days</li>
+									</ul>
+								</div>
+
+								<select name="country" id="select1" style="display: none">
+									<option value="option1">5 Days</option>
+									<option value="option2">7 Days</option>
 								</select>
 							</div>
 
@@ -546,7 +764,7 @@
 								class="form__btn_search w-100 [ btn btn-info translate-effect left-translate text-light ]">
 								<i class="fa-solid fa-magnifying-glass"></i> Search Now
 							</button>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -555,12 +773,14 @@
 
 		<!-- CORE FEATURES -->
 		<section aria-label="my-features" class="features [ position-relative ]">
+			<!-- FILTER -->
+			<div class="filter__white"></div>
 			<!-- WRAPPER -->
-			<div class="[ position-relative container z-1 ]" style="padding-block: 5rem">
+			<div class="[ position-relative container-md ]" style="padding-block: 4rem">
 				<!-- HEADING -->
 				<div class="[ text-center ]">
 					<h4 class="[ text-warning fw-bold ]">Core Features</h4>
-					<h2 class="[ display-5 fw-bold ]">
+					<h2 class="[ text-primary display-5 fw-bold ]">
 						Find <span class="[ text-info ]">Travel Perfection</span>
 					</h2>
 					<p>
@@ -570,15 +790,15 @@
 				</div>
 
 				<!-- CONTENT -->
-				<div class="features__content [ row my-5 row-gap-4 ]">
+				<div class="features__content [ row my-5 ]">
 					<!-- ROW ITEM1 -->
-					<div class="[ col-lg-3 ]">
+					<div class="[ col-lg-3 col-md-6 col-sm-6 mb-4 ]">
 						<!-- CARD1 -->
 						<div class="card [ translate-effect btm-translate overflow-hidden ]">
 							<!-- CARD CONTENT -->
 							<div class="card-body m-4">
 								<i class="fa-solid fa-flag [ text-info display-3 ]"></i>
-								<h5 class="card-title [ fs-4 fw-bold ] [ mt-3 ]">
+								<h5 class="card-title [ fs-4 fw-bold text-primary ] [ mt-3 ]">
 									Tell Us What Do You Want To Do
 								</h5>
 								<p class="card-text">
@@ -591,13 +811,13 @@
 					</div>
 
 					<!-- ROW ITEM2 -->
-					<div class="[ col-lg-3 ]">
+					<div class="[ col-lg-3 col-md-6 col-sm-6 mb-4 ]">
 						<!-- CARD2 -->
 						<div class="card [ translate-effect btm-translate overflow-hidden ]">
 							<!-- CARD CONTENT -->
 							<div class="card-body m-4">
 								<i class="fa-solid fa-location-dot [ text-info display-3 ]"></i>
-								<h5 class="card-title [ fs-4 fw-bold ] [ mt-3 ]">
+								<h5 class="card-title [ fs-4 fw-bold text-primary ] [ mt-3 ]">
 									Share Your Travel Locations
 								</h5>
 								<p class="card-text">
@@ -610,13 +830,13 @@
 					</div>
 
 					<!-- ROW ITEM3 -->
-					<div class="[ col-lg-3 ]">
+					<div class="[ col-lg-3 col-md-6 col-sm-6 mb-4 ]">
 						<!-- CARD3 -->
 						<div class="card [ translate-effect btm-translate overflow-hidden ]">
 							<!-- CARD CONTENT -->
 							<div class="card-body m-4">
 								<i class="fa-solid fa-signs-post [ text-info display-3 ]"></i>
-								<h5 class="card-title [ fs-4 fw-bold ] [ mt-3 ]">
+								<h5 class="card-title [ fs-4 fw-bold text-primary ] [ mt-3 ]">
 									Share Your Travel Preference
 								</h5>
 								<p class="card-text">
@@ -629,13 +849,13 @@
 					</div>
 
 					<!-- ROW ITEM4 -->
-					<div class="[ col-lg-3 ]">
+					<div class="[ col-lg-3 col-md-6 col-sm-6 mb-4 ]">
 						<!-- CARD4 -->
 						<div class="card [ translate-effect btm-translate overflow-hidden ]">
 							<!-- CARD CONTENT -->
 							<div class="card-body m-4">
 								<i class="fa-solid fa-compass [ text-info display-3 ]"></i>
-								<h5 class="card-title [ fs-4 fw-bold ] [ mt-3 ]">
+								<h5 class="card-title [ fs-4 fw-bold text-primary ] [ mt-3 ]">
 									Here 100% Trusted Tour Agency
 								</h5>
 								<p class="card-text">
@@ -648,9 +868,6 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- FILTER -->
-			<div class="filter__white"></div>
 		</section>
 		<!-- ... -->
 
@@ -661,7 +878,7 @@
 				<!-- HEADING -->
 				<div class="[ text-center ]">
 					<h4 class="[ text-warning fw-bold ]">Top Destinations</h4>
-					<h2 class="[ display-5 fw-bold ]">
+					<h2 class="[ display-5 fw-bold text-primary ]">
 						Explore <span class="[ text-info ]">Top Destinations</span>
 					</h2>
 					<p>
@@ -671,11 +888,11 @@
 				</div>
 
 				<!-- CONTENT -->
-				<div class="kumpulangambar">
+				<div class="kumpulangambar [ mt-5 ]">
 					<!-- WRAPPER -->
-					<div class="row">
+					<div class="row row-gap-4">
 						<!-- ROW ITEM1 -->
-						<div class="[ col-lg-7 py-2 ]">
+						<div class="[ col-lg-7 ]">
 							<!-- IMG1 -->
 							<div class="kotak kotak_top [ zoom_animate ]">
 								<!-- FILTER -->
@@ -692,7 +909,7 @@
 							</div>
 
 							<!-- WRAPPER -->
-							<div class="[ d-lg-flex justify-content-between gap-4 ]">
+							<div class="[ d-sm-flex gap-4 ]">
 								<!-- IMG2 -->
 								<div class="[ pt-4 ]">
 									<div class="kotak kotak_bottom [ w-100 zoom_animate ]">
@@ -737,7 +954,7 @@
 						</div>
 
 						<!-- ROW ITEM2 -->
-						<div class="[ col-lg-5 py-2 ]">
+						<div class="[ col-lg-5 ]">
 							<!-- IMG4 -->
 							<div class="kotak kotak_samping [ zoom_animate ]">
 								<!-- FILTER -->
@@ -766,9 +983,9 @@
 			<!-- WRAPPER -->
 			<div class="[ container-md d-flex flex-column gap-5 ]">
 				<!-- HEADING -->
-				<div class="[ text-justify position-relative ]">
+				<div class="pack__title [ position-relative px-3 ]">
 					<h4 class="[ text-warning fw-bold ]">Top Pick</h4>
-					<h2 class="[ display-5 fw-bold ]">
+					<h2 class="[ display-5 fw-bold text-primary ]">
 						Best <span class="[ text-info ]">Tour Package</span>
 					</h2>
 					<p>
@@ -787,7 +1004,7 @@
 				<!-- CONTENT1 -->
 				<div class="karoselgambar-paket">
 					<!-- CARD1 -->
-					<div class="wrapper mx-2">
+					<div class="wrapper px-3">
 						<div class="card [ underline_animate ]">
 							<!-- CARD IMG -->
 							<div class="zoom_animate [ position-relative ]">
@@ -800,12 +1017,16 @@
 								<!-- DAY -->
 								<div class="hari [ rounded ] [ d-flex align-items-center gap-2 ]">
 									<i class="fa-solid fa-calendar-days"></i>
-									<h5 class="m-0">9 days Tour</h5>
+									<h5 class="m-0 [ fs-6 fw-bold ]" style="font-family: 'poppins'">
+										9 days Tour
+									</h5>
 								</div>
 
 								<!-- TITLE -->
 								<h6 class="[ text-info fs-5 fw-bold ]">Greeee</h6>
-								<h3 class="card-title [ fw-bold fs-3 ]">Santorini, Oia</h3>
+								<h3 class="card-title [ fw-bold fs-3 text-primary text_hover ]">
+									Santorini, Oia
+								</h3>
 
 								<!-- STAR -->
 								<div class="bintang [ d-flex align-items-center gap-2 my-3 ]">
@@ -838,7 +1059,7 @@
 					</div>
 
 					<!-- CARD2 -->
-					<div class="wrapper mx-2">
+					<div class="wrapper px-3">
 						<div class="card [ underline_animate ]">
 							<!-- CARD IMG -->
 							<div class="zoom_animate [ position-relative ]">
@@ -851,12 +1072,16 @@
 								<!-- DAY -->
 								<div class="hari [ rounded ] [ d-flex align-items-center gap-2 ]">
 									<i class="fa-solid fa-calendar-days"></i>
-									<h5 class="m-0">9 days Tour</h5>
+									<h5 class="m-0 [ fs-6 fw-bold ]" style="font-family: 'poppins'">
+										9 days Tour
+									</h5>
 								</div>
 
 								<!-- TITLE -->
 								<h6 class="[ text-info fs-5 fw-bold ]">Maldives</h6>
-								<h3 class="card-title [ fw-bold fs-3 ]">Hurawalhi Island</h3>
+								<h3 class="card-title [ fw-bold fs-3 text-primary text_hover ]">
+									Hurawalhi Island
+								</h3>
 
 								<!-- STAR -->
 								<div class="bintang [ d-flex align-items-center gap-2 my-3 ]">
@@ -889,7 +1114,7 @@
 					</div>
 
 					<!-- CARD3 -->
-					<div class="wrapper mx-2">
+					<div class="wrapper px-3">
 						<div class="card [ underline_animate ]">
 							<!-- CARD IMG -->
 							<div class="zoom_animate [ position-relative ]">
@@ -902,12 +1127,16 @@
 								<!-- DAY -->
 								<div class="hari [ rounded ] [ d-flex align-items-center gap-2 ]">
 									<i class="fa-solid fa-calendar-days"></i>
-									<h5 class="m-0">5 days Tour</h5>
+									<h5 class="m-0 [ fs-6 fw-bold ]" style="font-family: 'poppins'">
+										5 days Tour
+									</h5>
 								</div>
 
 								<!-- TITLE -->
 								<h6 class="[ text-info fs-5 fw-bold ]">Greeee</h6>
-								<h3 class="card-title [ fw-bold fs-3 ]">Santorini, Oia</h3>
+								<h3 class="card-title [ fw-bold fs-3 text-primary text_hover ]">
+									Santorini, Oia
+								</h3>
 
 								<!-- STAR -->
 								<div class="bintang [ d-flex align-items-center gap-2 my-3 ]">
@@ -940,7 +1169,7 @@
 					</div>
 
 					<!-- CARD4 -->
-					<div class="wrapper mx-2">
+					<div class="wrapper px-3">
 						<div class="card [ underline_animate ]">
 							<!-- CARD IMG -->
 							<div class="zoom_animate [ position-relative ]">
@@ -953,12 +1182,16 @@
 								<!-- DAY -->
 								<div class="hari [ rounded ] [ d-flex align-items-center gap-2 ]">
 									<i class="fa-solid fa-calendar-days"></i>
-									<h5 class="m-0">9 days Tour</h5>
+									<h5 class="m-0 [ fs-6 fw-bold ]" style="font-family: 'poppins'">
+										9 days Tour
+									</h5>
 								</div>
 
 								<!-- TITLE -->
 								<h6 class="[ text-info fs-5 fw-bold ]">Croatia</h6>
-								<h3 class="card-title [ fw-bold fs-3 ]">Piazza Castello</h3>
+								<h3 class="card-title [ fw-bold fs-3 text-primary text_hover ]">
+									Piazza Castello
+								</h3>
 
 								<!-- STAR -->
 								<div class="bintang [ d-flex align-items-center gap-2 my-3 ]">
@@ -994,69 +1227,83 @@
 				<!-- CONTENT2 -->
 				<div class="[ row row-gap-4 ]">
 					<!-- TITLE -->
-					<div class="col-lg-2">
+					<div class="[ col-lg-2 ]">
 						<div
-							class="judulkategori [ w-100 h-100 d-flex align-items-center justify-content-center text-center rounded ]">
-							<h3 class="[ p-3 fw-bold ]">Top Categories</h3>
+							class="judulkategori [ h-100 d-flex align-items-center justify-content-center text-center rounded ] mx-3">
+							<h3 class="[ fw-bold fs-4 ] [ p-3 ]">Top Categories</h3>
 						</div>
 					</div>
 
 					<!-- CONTENT -->
 					<div class="karoselgambar-icon [ col-lg-10 ]">
 						<!-- ICON1 -->
-						<div class="kategoricon underline_animate">
-							<div class="img_icon [ d-flex justify-content-center ]">
-								<img class="" src="assets/img/004-camping-tent.png" alt="" />
+						<div class="wrapper_icon">
+							<div class="kategoricon underline_animate">
+								<div class="img_icon [ d-flex justify-content-center ]">
+									<img class="" src="assets/img/004-camping-tent.png" alt="" />
+								</div>
+								<h6 class="[ text-primary fs-5 fw-bold ]">Camping</h6>
 							</div>
-							<h6 class="[ fs-5 fw-bold ]">Camping</h6>
 						</div>
 
 						<!-- ICON2 -->
-						<div class="kategoricon underline_animate">
-							<div class="img_icon [ d-flex justify-content-center ]">
-								<img class="" src="assets/img/003-hiking.png" alt="" />
+						<div class="wrapper_icon">
+							<div class="kategoricon underline_animate">
+								<div class="img_icon [ d-flex justify-content-center ]">
+									<img class="" src="assets/img/003-hiking.png" alt="" />
+								</div>
+								<h6 class="[ text-primary fs-5 fw-bold ]">Hiking</h6>
 							</div>
-							<h6 class="[ fs-5 fw-bold ]">Hiking</h6>
 						</div>
 
 						<!-- ICON3 -->
-						<div class="kategoricon underline_animate">
-							<div class="img_icon [ d-flex justify-content-center ]">
-								<img class="" src="assets/img/005-sunbed.png" alt="" />
+						<div class="wrapper_icon">
+							<div class="kategoricon underline_animate">
+								<div class="img_icon [ d-flex justify-content-center ]">
+									<img class="" src="assets/img/005-sunbed.png" alt="" />
+								</div>
+								<h6 class="[ text-primary fs-5 fw-bold ]">Beach Tours</h6>
 							</div>
-							<h6 class="[ fs-5 fw-bold ]">Beach Tours</h6>
 						</div>
 
 						<!-- ICON4 -->
-						<div class="kategoricon underline_animate">
-							<div class="img_icon [ d-flex justify-content-center ]">
-								<img class="" src="assets/img/006-surf.png" alt="" />
+						<div class="wrapper_icon">
+							<div class="kategoricon underline_animate">
+								<div class="img_icon [ d-flex justify-content-center ]">
+									<img class="" src="assets/img/006-surf.png" alt="" />
+								</div>
+								<h6 class="[ text-primary fs-5 fw-bold ]">Surfing</h6>
 							</div>
-							<h6 class="[ fs-5 fw-bold ]">Surfing</h6>
 						</div>
 
 						<!-- ICON5 -->
-						<div class="kategoricon underline_animate">
-							<div class="img_icon [ d-flex justify-content-center ]">
-								<img class="" src="assets/img/002-safari.png" alt="" />
+						<div class="wrapper_icon">
+							<div class="kategoricon underline_animate">
+								<div class="img_icon [ d-flex justify-content-center ]">
+									<img class="" src="assets/img/002-safari.png" alt="" />
+								</div>
+								<h6 class="[ text-primary fs-5 fw-bold ]">Safari</h6>
 							</div>
-							<h6 class="[ fs-5 fw-bold ]">Safari</h6>
 						</div>
 
 						<!-- ICON6 -->
-						<div class="kategoricon underline_animate">
-							<div class="img_icon [ d-flex justify-content-center ]">
-								<img class="" src="assets/img/008-cycling.png" alt="" />
+						<div class="wrapper_icon">
+							<div class="kategoricon underline_animate">
+								<div class="img_icon [ d-flex justify-content-center ]">
+									<img class="" src="assets/img/008-cycling.png" alt="" />
+								</div>
+								<h6 class="[ text-primary fs-5 fw-bold ]">Cycling</h6>
 							</div>
-							<h6 class="[ fs-5 fw-bold ]">Cycling</h6>
 						</div>
 
 						<!-- ICON7 -->
-						<div class="kategoricon underline_animate">
-							<div class="img_icon [ d-flex justify-content-center ]">
-								<img class="" src="assets/img/007-hiking-1.png" alt="" />
+						<div class="wrapper_icon">
+							<div class="kategoricon underline_animate">
+								<div class="img_icon [ d-flex justify-content-center ]">
+									<img class="" src="assets/img/007-hiking-1.png" alt="" />
+								</div>
+								<h6 class="[ text-primary fs-5 fw-bold ]">Trekings</h6>
 							</div>
-							<h6 class="[ fs-5 fw-bold ]">Trekings</h6>
 						</div>
 					</div>
 				</div>
@@ -1067,11 +1314,11 @@
 		<!-- TOP HARGA -->
 		<section aria-label="my-deals" class="top-harga">
 			<!-- WRAPPER -->
-			<div class="deal__wrapper [ container-md d-flex flex-column gap-4 ]">
+			<div class="deal__wrapper [ container-md ]">
 				<!-- HEADING -->
 				<div class="[ text-center ]">
 					<h4 class="[ text-warning fw-bold ]">Top Deals</h4>
-					<h2 class="[ display-5 fw-bold ]">
+					<h2 class="[ display-5 fw-bold text-primary ]">
 						The Last <span class="[ text-info ]">Minute Deals</span>
 					</h2>
 					<p>
@@ -1079,58 +1326,73 @@
 						incididunt ut labore.
 					</p>
 				</div>
-				<div class="row row-gap-2">
+
+				<!-- CONTENT -->
+				<div class="row [ mb-4 mt-1 ]">
+					<!-- WRAPPER1 -->
 					<div class="col-lg-4">
-						<div class="card [ zoom_animate ]">
-							<div class="dark_overlay"></div>
-							<div class="rounded">
-								<img src="assets/img/destination11.jpg" class="rounded" alt="..." />
-							</div>
-
-							<!-- CARD CONTENT -->
-							<div
-								class="card-body [ text-light ] [ p-4 pt-5 position-absolute bottom-0 start-0 end-0 z-2 ]">
-								<!-- TITLE -->
-								<h6 class="[ text-warning fs-5 fw-bold ]">Greeee</h6>
-								<h3 class="card-title [ fw-bold fs-3 ]">Santorini, Oia</h3>
-
-								<!-- STAR -->
-								<div class="bintang [ d-flex align-items-center gap-2 my-3 ]">
-									<div class="text-warning">
-										<span class="fa-solid fa-star"></span>
-										<span class="fa-solid fa-star"></span>
-										<span class="fa-solid fa-star"></span>
-										<span class="fa-solid fa-star"></span>
-										<span class="fa-solid fa-star"></span>
-									</div>
-									<p class="m-0">(38)</p>
+						<!-- CARD1 -->
+						<div class="card__wrapper [ pt-4 ]">
+							<div class="card [ zoom_animate ]">
+								<div class="dark_overlay"></div>
+								<div class="rounded">
+									<img src="assets/img/destination11.jpg" class="rounded" alt="..." />
 								</div>
 
-								<!-- PRICE -->
-								<div class="harga [ d-flex align-items-center gap-2 ]">
-									<h6
-										class="[ m-0 fs-5 fw-bold text-warning ]"
-										style="font-family: 'poppins'">
-										$180.00
-									</h6>
-									<p class="m-0">| per person</p>
+								<!-- CARD CONTENT -->
+								<div
+									class="card-body [ text-light ] [ p-4 pt-5 position-absolute bottom-0 start-0 end-0 z-2 ]">
+									<!-- TITLE -->
+									<h6 class="[ text-warning fs-5 fw-bold ]">Greeee</h6>
+									<h3 class="card-title [ fw-bold fs-3 ]">Santorini, Oia</h3>
 
-									<!-- DAY -->
-									<div class="[ rounded ] [ d-flex align-items-center gap-2 ms-auto ]">
-										<i class="fa-solid fa-calendar-days"></i>
-										<h5 class="m-0">9 days Tour</h5>
+									<!-- STAR -->
+									<div class="bintang [ d-flex align-items-center gap-2 my-3 ]">
+										<div class="text-warning">
+											<span class="fa-solid fa-star"></span>
+											<span class="fa-solid fa-star"></span>
+											<span class="fa-solid fa-star"></span>
+											<span class="fa-solid fa-star"></span>
+											<span class="fa-solid fa-star"></span>
+										</div>
+										<p class="[ text-light ] [ m-0 ]">(38)</p>
+									</div>
+
+									<!-- PRICE -->
+									<div class="harga [ d-flex align-items-center justify-content-between ]">
+										<div class="flow">
+											<h6
+												class="[ m-0 fs-5 fw-bold text-warning ]"
+												style="font-family: 'poppins'">
+												$180.00
+											</h6>
+											<p class="[ text-light ] [ m-0 ]">| per person</p>
+										</div>
+
+										<!-- DAY -->
+										<div class="[ rounded ] [ d-flex align-items-center gap-2 ms-auto ]">
+											<i class="fa-solid fa-calendar-days"></i>
+											<h5 class="m-0 fs-6 fw-bold" style="font-family: 'poppins'">
+												9 days Tour
+											</h5>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<!-- WRAPPER2 -->
 					<div class="col-lg-8">
+						<!-- ROW ITEM -->
 						<div class="d-md-flex gap-4">
-							<div class="">
+							<!-- CARD WRAPPER -->
+							<div class="card__wrapper [ pt-4 ]">
+								<!-- CARD -->
 								<div class="card [ zoom_animate ]">
 									<div class="dark_overlay"></div>
 									<div class="rounded">
-										<img src="assets/img/destination11.jpg" class="rounded" alt="..." />
+										<img src="assets/img/destination10.jpg" class="rounded" alt="..." />
 									</div>
 
 									<!-- CARD CONTENT -->
@@ -1149,33 +1411,40 @@
 												<span class="fa-solid fa-star"></span>
 												<span class="fa-solid fa-star"></span>
 											</div>
-											<p class="m-0">(38)</p>
+											<p class="[ text-light ] [ m-0 ]">(38)</p>
 										</div>
 
 										<!-- PRICE -->
 										<div class="harga [ d-flex align-items-center gap-2 ]">
-											<h6
-												class="[ m-0 fs-5 fw-bold text-warning ]"
-												style="font-family: 'poppins'">
-												$180.00
-											</h6>
-											<p class="m-0">| per person</p>
+											<div class="flow">
+												<h6
+													class="[ m-0 fs-5 fw-bold text-warning ]"
+													style="font-family: 'poppins'">
+													$180.00
+												</h6>
+												<p class="[ text-light ] [ m-0 ]">| per person</p>
+											</div>
 
 											<!-- DAY -->
 											<div
 												class="[ rounded ] [ d-flex align-items-center gap-2 ms-auto ]">
 												<i class="fa-solid fa-calendar-days"></i>
-												<h5 class="m-0">9 days Tour</h5>
+												<h5 class="m-0 fs-6 fw-bold" style="font-family: 'poppins'">
+													9 days Tour
+												</h5>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="">
+
+							<!-- CARD WRAPPER -->
+							<div class="card__wrapper [ pt-4 ]">
+								<!-- CARD -->
 								<div class="card [ zoom_animate ]">
 									<div class="dark_overlay"></div>
 									<div class="rounded">
-										<img src="assets/img/destination11.jpg" class="rounded" alt="..." />
+										<img src="assets/img/destination13.jpg" class="rounded" alt="..." />
 									</div>
 
 									<!-- CARD CONTENT -->
@@ -1194,23 +1463,27 @@
 												<span class="fa-solid fa-star"></span>
 												<span class="fa-solid fa-star"></span>
 											</div>
-											<p class="m-0">(38)</p>
+											<p class="[ text-light ] [ m-0 ]">(38)</p>
 										</div>
 
 										<!-- PRICE -->
 										<div class="harga [ d-flex align-items-center gap-2 ]">
-											<h6
-												class="[ m-0 fs-5 fw-bold text-warning ]"
-												style="font-family: 'poppins'">
-												$180.00
-											</h6>
-											<p class="m-0">| per person</p>
+											<div class="flow">
+												<h6
+													class="[ m-0 fs-5 fw-bold text-warning ]"
+													style="font-family: 'poppins'">
+													$180.00
+												</h6>
+												<p class="[ text-light ] [ m-0 ]">| per person</p>
+											</div>
 
 											<!-- DAY -->
 											<div
 												class="[ rounded ] [ d-flex align-items-center gap-2 ms-auto ]">
 												<i class="fa-solid fa-calendar-days"></i>
-												<h5 class="m-0">9 days Tour</h5>
+												<h5 class="m-0 fs-6 fw-bold" style="font-family: 'poppins'">
+													9 days Tour
+												</h5>
 											</div>
 										</div>
 									</div>
@@ -1219,6 +1492,8 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- BTN -->
 				<div class="text-center">
 					<a href="" class="[ btn btn-info translate-effect left-translate text-light ]"
 						>View All Deals</a
@@ -1238,12 +1513,12 @@
 					<div class="row align-items-center row-gap-5">
 						<!-- TITLE -->
 						<div class="[ col-lg-5 ]">
-							<div class="review__head [ text-white ]">
+							<div class="review__head w [ text-white ]">
 								<h4 class="[ text-warning fw-bold ]">Our Testimonails</h4>
 								<h2 class="review__title [ display-5 fw-bold ]">
 									Good Reviews By <span class="[ text-info ]">Clients</span>
 								</h2>
-								<p>
+								<p class="text-white">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 									tempor incididunt ut labore.
 								</p>
@@ -1273,7 +1548,7 @@
 											</div>
 											<div class="review__user">
 												<h5 class="[ text-warning fw-bold ] [ m-0 ]">Lonell South</h5>
-												<p class="m-0">Accountant</p>
+												<p class="[ text-light ] [ m-0 ]">Accountant</p>
 											</div>
 										</div>
 									</div>
@@ -1294,12 +1569,12 @@
 											<div class="review__pic">
 												<img
 													class="[ rounded-circle ]"
-													src="assets/img/img1 (1).jpg"
+													src="assets/img/img2 (1).jpg"
 													alt="" />
 											</div>
 											<div class="review__user">
-												<h5 class="[ text-warning fw-bold ] [ m-0 ]">Lonell South</h5>
-												<p class="m-0">Accountant</p>
+												<h5 class="[ text-warning fw-bold ] [ m-0 ]">Kelton Mick</h5>
+												<p class="[ text-light ] [ m-0 ]">Manager</p>
 											</div>
 										</div>
 									</div>
@@ -1320,12 +1595,12 @@
 											<div class="review__pic">
 												<img
 													class="[ rounded-circle ]"
-													src="assets/img/img1 (1).jpg"
+													src="assets/img/img3.jpg"
 													alt="" />
 											</div>
 											<div class="review__user">
-												<h5 class="[ text-warning fw-bold ] [ m-0 ]">Lonell South</h5>
-												<p class="m-0">Accountant</p>
+												<h5 class="[ text-warning fw-bold ] [ m-0 ]">Jared Erondu</h5>
+												<p class="[ text-light ] [ m-0 ]">Supervisor</p>
 											</div>
 										</div>
 									</div>
@@ -1342,7 +1617,7 @@
 		<!-- TOP TREND -->
 		<div class="trend [ position-relative ]">
 			<!-- WRAPPER -->
-			<div class="container">
+			<div class="container-md">
 				<!-- CARAOUSEL -->
 				<div class="trend__carousel">
 					<!-- CARD1 -->
@@ -1365,7 +1640,9 @@
 								<div class="card-body [ col-md-7 position-relative p-4 ]">
 									<!-- TITLE -->
 									<h6 class="[ text-info fs-5 fw-bold ]">Greeee</h6>
-									<h3 class="card-title text_hover [ fw-bold fs-3 ]">Santorini, Oia</h3>
+									<h3 class="card-title [ text-primary text_hover fw-bold fs-3 ]">
+										Santorini, Oia
+									</h3>
 
 									<!-- STAR -->
 									<div class="bintang [ d-flex align-items-center gap-2 my-3 ]">
@@ -1389,7 +1666,9 @@
 									<div class="[ rounded ] [ d-flex align-items-center gap-2 mb-2 ]">
 										<div class="[ text_after text-info ] [ w-100 flow ]">
 											<i class="fa-solid fa-calendar-days"></i>
-											<h5 class="m-0">9 days Tour</h5>
+											<h5 class="m-0 [ fs-6 ]" style="font-family: 'poppins'">
+												9 days Tour
+											</h5>
 										</div>
 									</div>
 
@@ -1414,7 +1693,7 @@
 								<!-- IMG -->
 								<div class="trend__img [ col-md-5 position-relative ]">
 									<img
-										src="assets/img/trending1.jpg"
+										src="assets/img/trending2.jpg"
 										class="[ img-flud rounded-start ]"
 										alt="..." />
 									<div class="ribbon [ ribbon_top_left text-light ] [ p-2 ]">
@@ -1427,7 +1706,9 @@
 								<div class="card-body [ col-md-7 position-relative p-4 ]">
 									<!-- TITLE -->
 									<h6 class="[ text-info fs-5 fw-bold ]">Greeee</h6>
-									<h3 class="card-title text_hover [ fw-bold fs-3 ]">Santorini, Oia</h3>
+									<h3 class="card-title [ text-primary text_hover fw-bold fs-3 ]">
+										Santorini, Oia
+									</h3>
 
 									<!-- STAR -->
 									<div class="bintang [ d-flex align-items-center gap-2 my-3 ]">
@@ -1451,7 +1732,9 @@
 									<div class="[ rounded ] [ d-flex align-items-center gap-2 mb-2 ]">
 										<div class="[ text_after text-info ] [ w-100 flow ]">
 											<i class="fa-solid fa-calendar-days"></i>
-											<h5 class="m-0">9 days Tour</h5>
+											<h5 class="m-0 [ fs-6 ]" style="font-family: 'poppins'">
+												9 days Tour
+											</h5>
 										</div>
 									</div>
 
@@ -1476,7 +1759,7 @@
 								<!-- IMG -->
 								<div class="trend__img [ col-md-5 position-relative ]">
 									<img
-										src="assets/img/trending1.jpg"
+										src="assets/img/trending3.jpg"
 										class="[ img-flud rounded-start ]"
 										alt="..." />
 									<div class="ribbon [ ribbon_top_left text-light ] [ p-2 ]">
@@ -1489,7 +1772,9 @@
 								<div class="card-body [ col-md-7 position-relative p-4 ]">
 									<!-- TITLE -->
 									<h6 class="[ text-info fs-5 fw-bold ]">Greeee</h6>
-									<h3 class="card-title text_hover [ fw-bold fs-3 ]">Santorini, Oia</h3>
+									<h3 class="card-title [ text-primary text_hover fw-bold fs-3 ]">
+										Santorini, Oia
+									</h3>
 
 									<!-- STAR -->
 									<div class="bintang [ d-flex align-items-center gap-2 my-3 ]">
@@ -1513,7 +1798,75 @@
 									<div class="[ rounded ] [ d-flex align-items-center gap-2 mb-2 ]">
 										<div class="[ text_after text-info ] [ w-100 flow ]">
 											<i class="fa-solid fa-calendar-days"></i>
-											<h5 class="m-0">9 days Tour</h5>
+											<h5 class="m-0 [ fs-6 ]" style="font-family: 'poppins'">
+												9 days Tour
+											</h5>
+										</div>
+									</div>
+
+									<!-- PRICE -->
+									<div class="harga [ d-flex align-items-center gap-2 ]">
+										<h6
+											class="[ m-0 fs-5 fw-bold text-info ]"
+											style="font-family: 'poppins'">
+											$180.00
+										</h6>
+										<p class="m-0">| per person</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- CARD4 -->
+					<div class="wrapper mx-2">
+						<div class="card mb-3">
+							<div class="row gx-0">
+								<!-- IMG -->
+								<div class="trend__img [ col-md-5 position-relative ]">
+									<img
+										src="assets/img/trending4.jpg"
+										class="[ img-flud rounded-start ]"
+										alt="..." />
+									<div class="ribbon [ ribbon_top_left text-light ] [ p-2 ]">
+										<span class="[ fs-5 fw-bolder ]">15% OFF</span>
+									</div>
+									<div class="color_overlay"></div>
+								</div>
+
+								<!-- CONTENT -->
+								<div class="card-body [ col-md-7 position-relative p-4 ]">
+									<!-- TITLE -->
+									<h6 class="[ text-info fs-5 fw-bold ]">Greeee</h6>
+									<h3 class="card-title [ text-primary text_hover fw-bold fs-3 ]">
+										Santorini, Oia
+									</h3>
+
+									<!-- STAR -->
+									<div class="bintang [ d-flex align-items-center gap-2 my-3 ]">
+										<div class="text-warning">
+											<span class="fa-solid fa-star"></span>
+											<span class="fa-solid fa-star"></span>
+											<span class="fa-solid fa-star"></span>
+											<span class="fa-solid fa-star"></span>
+											<span class="fa-solid fa-star"></span>
+										</div>
+										<p class="m-0">(38)</p>
+									</div>
+
+									<!-- DESC -->
+									<p class="card-text">
+										cumque ad, eos voluptatem voluptatibus dolorum perferendis, saepe quos
+										consequatur
+									</p>
+
+									<!-- DAY -->
+									<div class="[ rounded ] [ d-flex align-items-center gap-2 mb-2 ]">
+										<div class="[ text_after text-info ] [ w-100 flow ]">
+											<i class="fa-solid fa-calendar-days"></i>
+											<h5 class="m-0 [ fs-6 ]" style="font-family: 'poppins'">
+												9 days Tour
+											</h5>
 										</div>
 									</div>
 
@@ -1537,86 +1890,12 @@
 
 		<!-- TUR GUIDE -->
 		<section aria-label="my-tourguide" class="tur-guide">
-			<!-- HEADING -->
-			<div class="[ text-center ]">
-				<h4 class="[ text-warning fw-bold ]">Top Deals</h4>
-				<h2 class="[ display-5 fw-bold ]">
-					The Last <span class="[ text-info ]">Minute Deals</span>
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt ut labore.
-				</p>
-			</div>
-
-			<!-- CONTENT -->
-			<div class="autoplay [ container ]">
-				<!-- CARD1 -->
-				<div class="card [ text-light rounded ] [ slide_mod ]">
-					<div class="zoom_animate rounded">
-						<img src="assets/img/img1.jpg" class="card-img-top" alt="..." />
-					</div>
-					<div class="card-body [ bg-info rounded-bottom ] [ up_animate text-center ]">
-						<h4 class="card-title [ fw-bold ]">Salmon Thuir</h4>
-						<p class="card-text">Senior Agent</p>
-					</div>
-				</div>
-
-				<!-- CARD2 -->
-				<div class="card [ text-light rounded ] [ slide_mod ]">
-					<div class="zoom_animate rounded">
-						<img src="assets/img/img2.jpg" class="card-img-top" alt="..." />
-					</div>
-					<div class="card-body [ bg-info rounded-bottom ] [ up_animate text-center ]">
-						<h4 class="card-title [ fw-bold ]">Horke Pels</h4>
-						<p class="card-text">Head Officer</p>
-					</div>
-				</div>
-
-				<!-- CARD3 -->
-				<div class="card [ text-light rounded ] [ slide_mod ]">
-					<div class="zoom_animate rounded">
-						<img src="assets/img/img4.jpg" class="card-img-top" alt="..." />
-					</div>
-					<div class="card-body [ bg-info rounded-bottom ] [ up_animate text-center ]">
-						<h4 class="card-title [ fw-bold ]">Sorden Kalos</h4>
-						<p class="card-text">Supervisor</p>
-					</div>
-				</div>
-
-				<!-- CARD4 -->
-				<div class="card [ text-light rounded ] [ slide_mod ]">
-					<div class="zoom_animate rounded">
-						<img src="assets/img/img3 (1).jpg" class="card-img-top" alt="..." />
-					</div>
-					<div class="card-body [ bg-info rounded-bottom ] [ up_animate text-center ]">
-						<h4 class="card-title [ fw-bold ]">Nelson Bam</h4>
-						<p class="card-text">Quality Assurance</p>
-					</div>
-				</div>
-
-				<!-- CARD5 -->
-				<div class="card [ text-light rounded ] [ slide_mod ]">
-					<div class="zoom_animate rounded">
-						<img src="assets/img/img4.jpg" class="card-img-top" alt="..." />
-					</div>
-					<div class="card-body [ bg-info rounded-bottom ] [ up_animate text-center ]">
-						<h4 class="card-title [ fw-bold ]">Cacics Coold</h4>
-						<p class="card-text">Asst.Manager</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ... -->
-
-		<!-- ARTIKEL -->
-		<section aria-label="my-article" class="artikel">
-			<div class="container">
+			<div class="container-md">
 				<!-- HEADING -->
-				<div class="[ text-center ]">
-					<h4 class="[ text-warning fw-bold ]">Top Deals</h4>
-					<h2 class="[ display-5 fw-bold ]">
-						The Last <span class="[ text-info ]">Minute Deals</span>
+				<div class="[ text-center mb-5 ]">
+					<h4 class="[ text-warning fw-bold ]">Tour Guides</h4>
+					<h2 class="[ display-5 fw-bold text-primary ]">
+						Meet Our <span class="[ text-info ]">Excellent Guides</span>
 					</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -1625,43 +1904,125 @@
 				</div>
 
 				<!-- CONTENT -->
-				<div class="d-lg-flex">
+				<div class="autoplay">
 					<!-- CARD1 -->
-					<div class="card [ mx-3 underline_animate mt-4 ]">
-						<div class="zoom_animate">
-							<img src="assets/img/trending10.jpg" class="card-img-top" alt="..." />
+					<div class="card [ text-light rounded ] [ slide_mod ]">
+						<div class="zoom_animate rounded-top">
+							<img src="assets/img/img1.jpg" class="card-img-top" alt="..." />
 						</div>
-						<div class="card-body [ bg-light ]">
-							<h5 class="card-title [ fw-bold text-info ]">Technology</h5>
-							<h4 class="card-text [ text_hover fw-bold ]">
-								How a developer duo at Deutsche Bank keep remote alive.
-							</h4>
+						<div class="card-body [ bg-info rounded-bottom ] [ up_animate text-center ]">
+							<h4 class="card-title [ fw-bold ]">Salmon Thuir</h4>
+							<p class="card-text [ text-light ] [ m-0 ]">Senior Agent</p>
 						</div>
 					</div>
 
 					<!-- CARD2 -->
-					<div class="card [ mx-3 underline_animate mt-4 ]">
-						<div class="zoom_animate">
-							<img src="assets/img/trending12.jpg" class="card-img-top" alt="..." />
+					<div class="card [ text-light rounded ] [ slide_mod ]">
+						<div class="zoom_animate rounded-top">
+							<img src="assets/img/img2.jpg" class="card-img-top" alt="..." />
 						</div>
-						<div class="card-body [ bg-light ]">
-							<h5 class="card-title [ fw-bold text-info ]">Inspiration</h5>
-							<h4 class="card-text [ text_hover fw-bold ]">
-								Inspire Runner with Autism Graces of Women's Running
-							</h4>
+						<div class="card-body [ bg-info rounded-bottom ] [ up_animate text-center ]">
+							<h4 class="card-title [ fw-bold ]">Horke Pels</h4>
+							<p class="card-text [ text-light ] [ m-0 ]">Head Officer</p>
 						</div>
 					</div>
 
 					<!-- CARD3 -->
-					<div class="card [ mx-3 underline_animate mt-4 ]">
-						<div class="zoom_animate">
-							<img src="assets/img/trending13.jpg" class="card-img-top" alt="..." />
+					<div class="card [ text-light rounded ] [ slide_mod ]">
+						<div class="zoom_animate rounded-top">
+							<img src="assets/img/img4.jpg" class="card-img-top" alt="..." />
 						</div>
-						<div class="card-body [ bg-light ]">
-							<h5 class="card-title [ fw-bold text-info ]">Public</h5>
-							<h4 class="card-text [ text_hover fw-bold ]">
-								Services To Grow Your Business Sell Affiliate Products
-							</h4>
+						<div class="card-body [ bg-info rounded-bottom ] [ up_animate text-center ]">
+							<h4 class="card-title [ fw-bold ]">Sorden Kalos</h4>
+							<p class="card-text [ text-light ] [ m-0 ]">Supervisor</p>
+						</div>
+					</div>
+
+					<!-- CARD4 -->
+					<div class="card [ text-light rounded ] [ slide_mod ]">
+						<div class="zoom_animate rounded-top">
+							<img src="assets/img/img3 (1).jpg" class="card-img-top" alt="..." />
+						</div>
+						<div class="card-body [ bg-info rounded-bottom ] [ up_animate text-center ]">
+							<h4 class="card-title [ fw-bold ]">Nelson Bam</h4>
+							<p class="card-text [ text-light ] [ m-0 ]">Quality Assurance</p>
+						</div>
+					</div>
+
+					<!-- CARD5 -->
+					<div class="card [ text-light rounded ] [ slide_mod ]">
+						<div class="zoom_animate rounded-top">
+							<img src="assets/img/img4.jpg" class="card-img-top" alt="..." />
+						</div>
+						<div class="card-body [ bg-info rounded-bottom ] [ up_animate text-center ]">
+							<h4 class="card-title [ fw-bold ]">Cacics Coold</h4>
+							<p class="card-text [ text-light ] [ m-0 ]">Asst.Manager</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ... -->
+
+		<!-- ARTIKEL -->
+		<section aria-label="my-article" class="artikel">
+			<div class="container-md">
+				<!-- HEADING -->
+				<div class="[ text-center ]">
+					<h4 class="[ text-warning fw-bold ]">Our Blogs and Offers</h4>
+					<h2 class="[ display-5 fw-bold text-primary ]">
+						Recent <span class="[ text-info ]">Article & Post</span>
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore.
+					</p>
+				</div>
+
+				<!-- CONTENT -->
+				<div class="[ row pt-4 ]">
+					<div class="col-lg-4 col-md-12">
+						<!-- CARD1 -->
+						<div class="card [ underline_animate mt-4 ]">
+							<div class="zoom_animate">
+								<img src="assets/img/trending10.jpg" class="card-img-top" alt="..." />
+							</div>
+							<div class="card-body card_mod [ bg-light ]">
+								<h5 class="card-title [ fw-bold text-info ]">Technology</h5>
+								<h4 class="card-text [ text-primary text_hover fw-bold ]">
+									How a developer duo at Deutsche Bank keep remote alive.
+								</h4>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<!-- CARD2 -->
+						<div class="card [ underline_animate mt-4 ]">
+							<div class="zoom_animate">
+								<img src="assets/img/trending12.jpg" class="card-img-top" alt="..." />
+							</div>
+							<div class="card-body card_mod [ bg-light ]">
+								<h5 class="card-title [ fw-bold text-info ]">Inspiration</h5>
+								<h4 class="card-text [ text-primary text_hover fw-bold ]">
+									Inspire Runner with Autism Graces of Women's Running
+								</h4>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<!-- CARD3 -->
+						<div class="card [ underline_animate mt-4 ]">
+							<div class="zoom_animate">
+								<img src="assets/img/trending13.jpg" class="card-img-top" alt="..." />
+							</div>
+							<div class="card-body card_mod [ bg-light ]">
+								<h5 class="card-title [ fw-bold text-info ]">Public</h5>
+								<h4 class="card-text [ text-primary text_hover fw-bold ]">
+									Services To Grow Your Business Sell Affiliate Products
+								</h4>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1671,12 +2032,12 @@
 
 		<!-- PARTNER -->
 		<section aria-label="my-partners" class="partner">
-			<div class="container">
+			<div class="container-md">
 				<!-- HEADING -->
 				<div class="[ text-center ]">
-					<h4 class="[ text-warning fw-bold ]">Top Deals</h4>
-					<h2 class="[ display-5 fw-bold ]">
-						The Last <span class="[ text-info ]">Minute Deals</span>
+					<h4 class="[ text-warning fw-bold ]">Our Partners</h4>
+					<h2 class="[ display-5 fw-bold text-primary ]">
+						Our Awesome <span class="[ text-info ]">Partners</span>
 					</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -1685,7 +2046,7 @@
 				</div>
 
 				<!-- CAROUSEL -->
-				<div class="partner__slick">
+				<div class="partner__slick [ pt-4 ]">
 					<div class="slick_item slide_mod rounded">
 						<img class="px-4 py-2" src="assets/img/cl-1.png" alt="" />
 					</div>
@@ -1762,7 +2123,7 @@
 						<div
 							class="white_text [ bg-light rounded ] [ d-flex align-items-center justify-content-center gap-2 ]">
 							<i class="fa-brands fa-instagram"></i>
-							<p class="m-0">Follow On Instagram</p>
+							<p class="[ text-primary ] [ m-0 ]">Follow On Instagram</p>
 						</div>
 					</div>
 				</div>
@@ -1770,30 +2131,32 @@
 				<!-- CONTENT -->
 				<div class="footer__info [ row ]">
 					<!-- ITEM1 -->
-					<div class="footer__item [ text-white ] [ col-lg-4 ]">
-						<div class="[ px-2 flow_margin ]">
+					<div class="footer__item [ text-white ] [ col-lg-4 col-md-6 ]">
+						<div class="[ px-2 ]">
 							<img src="assets/img/logo-white.png" alt="" />
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione libero
-								obcaecati reprehenderit aspernatur dolorum magnam ea explicabo ipsam
-							</p>
-							<div class="footer__contact [ m-0 ]">
-								<p class="mb-2"><b>PO Box:</b> +47-252-254-2542</p>
-								<p class="mb-2"><b>Location:</b> Collins Street, sydney, Australia</p>
-								<p class="mb-2"><b>Email:</b> info@Travelin.com</p>
-								<p class="mb-2"><b>Website:</b> www.Travelin.com</p>
+							<div class="flow">
+								<p class="[ text-light ]">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione libero
+									obcaecati reprehenderit aspernatur dolorum magnam ea explicabo ipsam
+								</p>
+								<div class="footer__contact">
+									<p class="mb-2"><b>PO Box:</b> +47-252-254-2542</p>
+									<p class="mb-2"><b>Location:</b> Collins Street, sydney, Australia</p>
+									<p class="mb-2"><b>Email:</b> info@Travelin.com</p>
+									<p class="mb-2"><b>Website:</b> www.Travelin.com</p>
+								</div>
 							</div>
 						</div>
 					</div>
 
 					<!-- ITEM2 -->
-					<div class="footer__item [ text-white ] [ col-lg-2 ]">
+					<div class="footer__item [ text-white ] [ col-lg-2 col-md-6 ]">
 						<div class="px-2">
 							<!-- TITLE -->
 							<h4 class="items__underline [ fs-3 mb-4 fw-bold ]">Quick Link</h4>
 
 							<!-- LINK -->
-							<ul class="[ p-0 flow_block ]" style="list-style-type: none">
+							<ul class="[ p-0 flow ]" style="list-style-type: none">
 								<li>
 									<a class="[ text-white text-decoration-none text_hover ]" href="#"
 										>About Us</a
@@ -1829,41 +2192,41 @@
 					</div>
 
 					<!-- ITEM3 -->
-					<div class="footer__item [ text-white ] [ col-lg-2 ]">
+					<div class="footer__item [ text-white ] [ col-lg-2 col-md-6 ]">
 						<div class="px-2">
 							<!-- TITLE -->
-							<h4 class="items__underline [ fs-3 mb-4 fw-bold ]">Quick Link</h4>
+							<h4 class="items__underline [ fs-3 mb-4 fw-bold ]">Categories</h4>
 
 							<!-- LINK -->
-							<ul class="[ p-0 flow_block ]" style="list-style-type: none">
+							<ul class="[ p-0 flow ]" style="list-style-type: none">
 								<li>
 									<a class="[ text-white text-decoration-none text_hover ]" href="#"
-										>About Us</a
+										>Travel</a
 									>
 								</li>
 								<li>
 									<a class="[ text-white text-decoration-none text_hover ]" href="#"
-										>Delivery Information</a
+										>Technology</a
 									>
 								</li>
 								<li>
 									<a class="[ text-white text-decoration-none text_hover ]" href="#"
-										>Privacy Policy</a
+										>Lifestyle</a
 									>
 								</li>
 								<li>
 									<a class="[ text-white text-decoration-none text_hover ]" href="#"
-										>Terms & Conditions</a
+										>Destinations</a
 									>
 								</li>
 								<li>
 									<a class="[ text-white text-decoration-none text_hover ]" href="#"
-										>Customer Service</a
+										>Entertaiment</a
 									>
 								</li>
 								<li>
 									<a class="[ text-white text-decoration-none text_hover ]" href="#"
-										>Return Policy</a
+										>Business</a
 									>
 								</li>
 							</ul>
@@ -1871,22 +2234,22 @@
 					</div>
 
 					<!-- ITEM4 -->
-					<div class="footer__item [ text-white ] [ col-lg-4 ]">
+					<div class="footer__item [ text-white ] [ col-lg-4 col-md-6 ]">
 						<div class="px-2">
 							<!-- TITLE -->
-							<h4 class="items__underline [ fs-3 mb-4 fw-bold ]">Quick Link</h4>
+							<h4 class="items__underline [ fs-3 mb-4 fw-bold ]">Newsletter</h4>
 
-							<p>
+							<p class="[ text-light ]">
 								Join our community of over 200,000 global readers who receives emails filled
 								with news, promotions, and other good stuff.
 							</p>
 
-							<div class="items__form [ d-flex justify-content-between gap-2 ]">
-								<div class="form__item [ input-group ]">
-									<input type="text" />
+							<div class="items__form [ d-xl-flex justify-content-between gap-2 ]">
+								<div class="[ input-group mt-3 ]">
+									<input type="text" placeholder="Email Address" class="form-control" />
 								</div>
 								<a
-									class="[ btn btn-info link-light translate-effect left-translate ]"
+									class="form_submit [ btn btn-info link-light translate-effect left-translate ] [ mt-3 ]"
 									href="#"
 									>Subscribe</a
 								>
@@ -1898,10 +2261,10 @@
 				<!-- BOTTOM CONTENT -->
 				<div class="footer__bottom">
 					<div class="footer__support [ row ]">
-						<div class="[ col-lg-8 ]">
+						<div class="[ col-lg-8 mt-3 ]">
 							<div
-								class="support__item [ text-white ] [ d-flex align-items-center gap-3 mx-2 ]">
-								<p class="m-0">We Support:</p>
+								class="support__item [ text-light ] [ d-flex align-items-center gap-3 mx-2 ]">
+								<p class="[ text-light ] [ m-0 ]">We Support:</p>
 								<div class="support__icon flow">
 									<i class="fa-brands fa-cc-mastercard [ fs-3 ]"></i>
 									<i class="fa-brands fa-cc-paypal [ fs-3 ]"></i>
@@ -1911,27 +2274,66 @@
 								</div>
 							</div>
 						</div>
-						<div class="items__form [ col-lg-4 ]">
+
+						<div class="items__form [ col-lg-4 mt-3 ]">
 							<div class="[ d-flex gap-2 mx-2 ]">
-								<div class="form__item [ input-group ]">
-									<input type="text" />
+								<!-- INPUT1 -->
+								<div class="custom_select w-100">
+									<div class="custom_dropdown w-100" data-select-id="select1">
+										<button
+											type="button"
+											class="form-control [ awesome toggle_change dropdown_button bg-light ]">
+											English
+										</button>
+										<ul class="dropdown_menu [ z-2 height_max ]">
+											<li data-value="option1">English</li>
+											<li data-value="option2">Chinese</li>
+											<li data-value="option3">Russian</li>
+											<li data-value="option4">Japanese</li>
+											<li data-value="option4">Korean</li>
+										</ul>
+									</div>
+
+									<select name="country" id="select1" style="display: none">
+										<option value="option1">English</option>
+										<option value="option2">Chinese</option>
+										<option value="option3">Russian</option>
+										<option value="option4">Japanese</option>
+										<option value="option4">Korean</option>
+									</select>
 								</div>
-								<div class="form__item [ input-group ]">
-									<select class="form-select p-3" name="country" id="country">
-										<option value="" disabled selected hidden>Destination</option>
-										<option value="1">Argentina</option>
-										<option value="2">Belgium</option>
-										<option value="3">Canada</option>
-										<option value="4">Denmark</option>
+
+								<!-- INPUT2 -->
+								<div class="custom_select w-75">
+									<div class="custom_dropdown w-100" data-select-id="select1">
+										<button
+											type="button"
+											class="form-control [ awesome toggle_change dropdown_button bg-light ]">
+											$ USD
+										</button>
+										<ul class="dropdown_menu [ z-2 height_max ]">
+											<li data-value="option1">$ USD</li>
+											<li data-value="option2">$ AUD</li>
+											<li data-value="option3">$ YEN</li>
+											<li data-value="option4">$ IN</li>
+										</ul>
+									</div>
+
+									<select name="country" id="select1" style="display: none">
+										<option value="option1">$ USD</option>
+										<option value="option2">$ AUD</option>
+										<option value="option3">$ YEN</option>
+										<option value="option4">$ IN</option>
 									</select>
 								</div>
 							</div>
 						</div>
 					</div>
+
 					<div
-						class="footer__copyright [ text-white rounded ] [ d-flex align-items-center justify-content-between p-4 mt-4 ]">
-						<p class="m-0">2022 Travelin. All rights reserved.</p>
-						<div class="social_media [ flow ]">
+						class="footer__copyright [ text-white rounded ] [ d-lg-flex align-items-center justify-content-between text-center mt-4 p-2 ]">
+						<p class="[ text-light ] [ m-0 p-2 ]">2022 Travelin. All rights reserved.</p>
+						<div class="social_media [ flow p-2 ]">
 							<i class="fa-brands fa-facebook"></i>
 							<i class="fa-brands fa-twitter"></i>
 							<i class="fa-brands fa-instagram"></i>
